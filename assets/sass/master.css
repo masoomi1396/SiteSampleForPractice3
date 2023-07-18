@@ -1,0 +1,765 @@
+body {
+  overflow-x: hidden;
+}
+
+#Header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#Header > section {
+  background-image: url(../img/index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+#Header > section:nth-of-type(1) {
+  animation-name: HeaderBackgroundTrick_1;
+}
+#Header > section:nth-of-type(2) {
+  animation-name: HeaderBackgroundTrick_2;
+}
+#Header > section:nth-of-type(3) {
+  animation-name: HeaderBackgroundTrick_3;
+}
+#Header > section > div {
+  width: 1140px;
+  height: 445px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 15px;
+}
+#Header > section > div > h3 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#Header > section > div > h3 > span {
+  width: 100%;
+  font-size: 90px;
+  color: #fff;
+}
+#Header > section > div > h3 > span:first-of-type {
+  color: #ff9000;
+}
+#Header > section > div > h4 {
+  padding: 0 24px 0 22px;
+  background-color: #7f66ff;
+  color: #fff;
+  font-size: 30px;
+}
+#Header > section > div > div {
+  width: 100%;
+}
+#Header > section > div > div > h2 {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #081624;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  border-bottom: 3px solid #7f66ff;
+}
+#Header > section > div > div > h2 > i {
+  color: #7f66ff;
+  transition: 0.4s;
+}
+#Header > section > div > div > h2:hover {
+  cursor: pointer;
+}
+#Header > section > div > div > h2:hover > i {
+  transform: translateX(5px);
+}
+#Header > header {
+  width: calc(100% - 48px);
+  height: 75px;
+  background-color: #0a2642;
+  position: fixed;
+  top: 22px;
+  left: 23px;
+  z-index: 100;
+  border-bottom: 2px solid #7f66ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+}
+#Header > header > h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+#Header > header > h1 > span {
+  text-transform: uppercase;
+  color: #7f66ff;
+}
+#Header > header > h1:hover {
+  cursor: default;
+}
+#Header > header > nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+#Header > header > nav > ul {
+  display: flex;
+  justify-content: flex-start;
+}
+#Header > header > nav > ul:first-of-type {
+  padding-left: 20px;
+}
+#Header > header > nav > ul:first-of-type > li {
+  margin-right: 20px;
+}
+#Header > header > nav > ul:first-of-type > li:first-of-type {
+  color: #7f66ff;
+}
+#Header > header > nav > ul:last-of-type {
+  padding-left: 100px;
+}
+#Header > header > nav > ul > li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 10px;
+}
+#Header > header > nav > ul > li > a {
+  transition: 0.4s;
+  font-size: 16px;
+}
+#Header > header > nav > ul > li > a:hover {
+  color: #7f66ff;
+}
+#Header > header > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+}
+#Header > header > div > a {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  transition: 0.4s;
+}
+#Header > header > div > a:hover {
+  background-color: #7f66ff;
+}
+#Header > header > div > a > i {
+  font-size: 14px;
+  color: #fff;
+}
+#Header > header > h2 {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f66ff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+}
+#Header > header > h2 > i {
+  transition: 0.4s;
+}
+#Header > header > h2:hover {
+  cursor: pointer;
+}
+#Header > header > h2:hover > i {
+  transform: translateX(5px);
+}
+
+@keyframes HeaderBackgroundTrick_1 {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  36% {
+    left: 100%;
+  }
+  36.0000001% {
+    left: -100%;
+  }
+  94% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes HeaderBackgroundTrick_2 {
+  0% {
+    left: -100%;
+  }
+  30% {
+    left: -100%;
+  }
+  36% {
+    left: 0;
+  }
+  63% {
+    left: 0;
+  }
+  69% {
+    left: 100%;
+  }
+  69.00000001% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes HeaderBackgroundTrick_3 {
+  0% {
+    left: -100%;
+  }
+  63% {
+    left: -100%;
+  }
+  69% {
+    left: 0%;
+  }
+  94% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*****************HEADER*************/
+#Time {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/timer.jpg);
+}
+#Time > nav {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 102, 255, 0.88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Time > nav > ul {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#Time > nav > ul > li {
+  color: rgba(10, 38, 66, 0.3);
+  font-size: 72px;
+  margin: 0 20px;
+}
+#Time > nav > ul > li > ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+#Time > nav > ul > li > ul > li {
+  color: #fff;
+}
+#Time > nav > ul > li > ul > li:first-of-type {
+  font-size: 72px;
+}
+#Time > nav > ul > li > ul > li:last-of-type {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+/***************TIMER****************/
+#Intro {
+  width: 100%;
+  height: 50vh;
+  background-color: #f5f8fb;
+  padding: 92px 0px 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Intro > div {
+  width: 1140px;
+  height: 305px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#Intro > div > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  color: #0a2642;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+#Intro > div > p {
+  width: 770px;
+  height: 110px;
+  color: #68727c;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2;
+}
+#Intro > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#Intro > div > div > h2 {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f66ff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  border-bottom: 3px solid rgba(103, 80, 220, 0.5568627451);
+}
+#Intro > div > div > h2 > i {
+  transition: 0.4s;
+}
+#Intro > div > div > h2:hover {
+  cursor: pointer;
+}
+#Intro > div > div > h2:hover > i {
+  transform: translateX(5px);
+}
+
+/*****************INTRO******************/
+#Topic {
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+#Topic > section {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#Topic > section > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#Topic > section > div > h2 {
+  font-size: 60px;
+  color: #0a2642;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+#Topic > section > div > h2::before {
+  content: "see what's all about";
+  color: #b6bec7;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 0.75;
+  letter-spacing: 0.2em;
+  width: 100%;
+  transform: translateX(30%);
+}
+#Topic > section > div > nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#Topic > section > div > nav > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#Topic > section > div > nav > ul > li {
+  margin: 0px 6px 6px 0px;
+  background-color: #f5f8fb;
+  color: #0a2642;
+  font-size: 16px;
+  flex-grow: 1;
+  height: 57px;
+  line-height: 57px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+#Topic > section > div > nav > ul > li:first-of-type, #Topic > section > div > nav > ul > li:hover {
+  color: #fff;
+  background-color: #7f66ff;
+}
+#Topic > section > div > nav > ul > li:hover {
+  cursor: pointer;
+}
+#Topic > section > div > div {
+  padding: 0px 15px;
+  width: 665px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#Topic > section > div > div > h3 {
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 34px;
+  color: #0a2642;
+}
+#Topic > section > div > div > p {
+  width: 100%;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #68727c;
+  text-align: left;
+  line-height: 2;
+  font-weight: 400;
+}
+#Topic > section > div > div > a {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #7f66ff;
+  text-decoration: underline;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+#Topic > section > div > div > a:hover {
+  color: #ff9000;
+}
+#Topic > section > div > figure {
+  width: 440px;
+  height: 345px;
+}
+#Topic > section > div > figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+/*****************TOPIC*****************/
+#Speakers {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f8fb;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+#Speakers > section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+#Speakers > section > div:first-of-type {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#Speakers > section > div:first-of-type > h2 {
+  font-size: 60px;
+  color: #0a2642;
+  margin-bottom: 8px;
+  flex-grow: 1;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#Speakers > section > div:first-of-type > h2::before {
+  content: "see what's all about";
+  color: #b6bec7;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 0.75;
+  letter-spacing: 0.2em;
+  width: 100%;
+}
+#Speakers > section > div:last-of-type {
+  width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 350px);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  grid-row: 15px;
+}
+#Speakers > section > div:last-of-type > figure {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+#Speakers > section > div:last-of-type > figure:hover {
+  cursor: pointer;
+}
+#Speakers > section > div:last-of-type > figure:hover > div {
+  background-color: black;
+  box-shadow: 0 0 0px 500px rgba(128, 102, 255, 0.5960784314);
+}
+#Speakers > section > div:last-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+}
+#Speakers > section > div:last-of-type > figure > div {
+  width: 200px;
+  background-color: #7f66ff;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  border-radius: 1px;
+  transition: 0.4s;
+}
+#Speakers > section > div:last-of-type > figure > div > h3 {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+}
+
+/***************SPEAKERS****************/
+#Ticket {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/cta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Ticket > section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(127, 102, 255, 0.9);
+}
+#Ticket > section > div {
+  width: 1140px;
+  height: 245px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#Ticket > section > div > h2 {
+  width: 100%;
+  font-size: 60px;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+#Ticket > section > div > p {
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+#Ticket > section > div > div {
+  width: 100%;
+  margin-top: 20px;
+  transform: translateX(40%);
+}
+#Ticket > section > div > div > h2 {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff9000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  border-bottom: 3px solid #0a2642;
+}
+#Ticket > section > div > div > h2 > i {
+  color: #fff;
+  transition: 0.4s;
+}
+#Ticket > section > div > div > h2:hover {
+  cursor: pointer;
+}
+#Ticket > section > div > div > h2:hover > i {
+  transform: translateX(5px);
+}
+
+/**************TICKETS*******************/
+#Footer {
+  width: 100%;
+  height: 435px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #221831;
+}
+#Footer > div {
+  width: 380px;
+  height: 280px;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#Footer > div:nth-of-type(1) > h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+#Footer > div:nth-of-type(1) > h2 > span {
+  text-transform: uppercase;
+  color: #7f66ff;
+}
+#Footer > div:nth-of-type(1) > h2:hover {
+  cursor: default;
+}
+#Footer > div:nth-of-type(1) > p {
+  width: 342px;
+  height: 90px;
+  font-size: 15px;
+  color: #A1ACB7;
+  line-height: 2;
+  font-weight: 400;
+  text-align: justify;
+}
+#Footer > div:nth-of-type(1) > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#Footer > div:nth-of-type(1) > div > a {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  transition: 0.4s;
+}
+#Footer > div:nth-of-type(1) > div > a:hover {
+  background-color: #7f66ff;
+}
+#Footer > div:nth-of-type(1) > div > a > i {
+  font-size: 14px;
+  color: #fff;
+}
+#Footer > div:nth-of-type(2) > h3 {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+#Footer > div:nth-of-type(2) > input {
+  width: 100%;
+  height: 45px;
+  background-color: #463A58;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 18px;
+  outline: none;
+  border: none;
+  margin-bottom: 5px;
+}
+#Footer > div:nth-of-type(2) > div {
+  width: 100%;
+}
+#Footer > div:nth-of-type(2) > div > h4 {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f66ff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  border-bottom: 5px solid #fff;
+}
+#Footer > div:nth-of-type(2) > div > h4 > i {
+  color: #fff;
+  transition: 0.4s;
+}
+#Footer > div:nth-of-type(2) > div > h4:hover {
+  cursor: pointer;
+}
+#Footer > div:nth-of-type(2) > div > h4:hover > i {
+  transform: translateX(5px);
+}
+#Footer > div:nth-of-type(3) > h3 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 54px;
+  width: 100%;
+}
+#Footer > div:nth-of-type(3) > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 83.5px);
+  grid-template-rows: repeat(2, 84.5px);
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 5px;
+}
+#Footer > div:nth-of-type(3) > div > figure > img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=master.css.map */
